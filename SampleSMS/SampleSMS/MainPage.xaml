@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:SampleSMS;assembly=SampleSMS"  
+             mc:Ignorable="d"
+             x:Class="SampleSMS.MainPage">
+
+    <StackLayout>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+            <Image Margin="0,50,0,0" x:Name="imgBanner" Source="banner.png" ></Image>
+            <Image Margin="0,0,0,10" x:Name="imgXamarinEssential" Source="xamarinessential.png" ></Image>
+            <Label Margin="0,0,0,10" FontAttributes="Bold" FontSize="Large" TextColor="#CA6F1E" HorizontalTextAlignment="Center" Text="SMS"></Label>
+           
+            <Button x:Name="btnSms" Text="Send SMS" Clicked="btnSendSms_Clicked"/>
+
+            <Button x:Name="btnSmsSilently" Text="Send SMS silently" Clicked="btnSendSmsSilently_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
